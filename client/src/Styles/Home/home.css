@@ -1,0 +1,24 @@
+.bodyHome{
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.contPages{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contentPag{
+    width: calc(100% - 60px);
+    height: calc(100% - 70px);
+    transition: 1s;
+}
+
+.contPages.active .contentPag{
+    width: calc(100% - 250px);
+    transition: 1s;
+}

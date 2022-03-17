@@ -1,0 +1,280 @@
+.containerModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.closeModal{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.closeModal button{
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: calc(90vh - 30px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar{
+    width: 2px;
+}
+
+.modal::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.modalCrear{
+    position: relative;
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px;
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.modalCrear::-webkit-scrollbar{
+    width: 2px;
+}
+
+.modalCrear::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.modalCrear::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.cuestionario{
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.contBtnSelecion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contBtnSelecion button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background: rgb(64, 169, 255);
+}
+
+.cuestionario input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: white;
+    margin: 10px 0;
+}
+
+.contOpcion{
+    width: 100%;
+    height: auto;
+}
+
+.contSelecion{
+    width: 100%;
+}
+
+.addOpciones{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contBtnOpc{
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnOpcion{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+}
+
+.btnOpcion.active{
+    background: lawngreen;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.603);
+}
+
+.opcionAdd{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.opcionAdd ion-icon{
+    font-size: 20px;
+}
+
+.opcionAdd input{
+    width: calc(100% - 120px);
+    border-radius: 15px;
+    margin: 5px 0;
+    border: 1px solid rgba(121, 119, 119, 0.349);
+    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+}
+
+.addOpciones ion-icon{
+    font-size: 20px;
+} 
+
+.contBtnAddPregunta{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: end;
+}
+
+.btnAdd{
+    position: relative;
+    margin: 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+}
+
+.modalMostrar{
+    width: 350px;
+    min-height: 20vh;
+    background: white;
+    border-radius: 20px;    
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+
+.modalMostrar::-webkit-scrollbar{
+    width: 2px;
+}
+
+.modalMostrar::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.modalMostrar::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.contPregunta{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(165, 165, 165, 0.281);
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.contPregunta h2{
+    margin-bottom: 5px;
+}
+
+.opciones{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.opcionItem{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opcionItem button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-right: 10px;
+}
+
+.opcionItem button ion-icon{
+    font-size: 30px;
+}
+
+.contPregunta textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.486);
+    background: white;
+}

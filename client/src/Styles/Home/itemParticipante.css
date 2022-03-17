@@ -1,0 +1,26 @@
+.itemPerticipante{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+    margin: 5px 0;
+}
+
+.itemPerticipante p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.itemPerticipante .avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.itemPerticipante .avatar img{
+    width: 100%;
+}

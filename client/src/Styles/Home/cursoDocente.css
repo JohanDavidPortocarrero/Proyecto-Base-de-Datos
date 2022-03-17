@@ -1,0 +1,310 @@
+
+.headCursoDocente{
+    width: calc(100% - 280px);
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headCursoDocente button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.headCursoDocente button ion-icon{
+    font-size: 18px;
+}
+
+.contCurso{
+    width: calc(100% - 280px);
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contCurso .curso{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #FE7F00;
+    padding: 15px 10px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.contCurso .curso::-webkit-scrollbar{
+    width: 6px;
+}
+
+.contCurso .curso::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.contCurso .curso::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.contParticipantes{
+    width: 280px;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contParticipantes .participantes{
+    width: 90%;
+    height: 95%;
+    border-radius: 15px;
+    background: rgb(245, 178, 166);
+    padding: 5px;
+}
+
+.headParticiapante{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.headParticiapante button{
+    position: absolute;
+    top: calc(50% - 30px);
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+.bodyParticipantes{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.contInfoCurso{
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 102, 255, 0.623);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.iconCurso{
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    background: #00c6ff;
+}
+
+.infoCurso{
+    position: relative;
+    width: calc(100% - 220px);
+    height: 180px;
+    background: none;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.infoCurso::-webkit-scrollbar{
+    width: 6px;
+}
+
+.infoCurso::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.infoCurso::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.deleteCurso{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contAccionbtn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contAccionbtn button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contAccionbtn button ion-icon, .deleteCurso ion-icon{
+    font-size: 18px;
+}
+
+.BodyCurso{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.asistencia{
+    width: 200px;
+    min-height: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.473);
+    background: rgba(255, 0, 98, 0.651);
+}
+
+.headAsistencia{
+    width: 100%;
+}
+
+.bodyAsistencia{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.bodyCurso{
+    width: calc(100% - 200px);
+    min-height: 100px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headBodyCurso{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.473);
+    background: rgb(0, 255, 179);
+}
+
+.bodyBodyCurso{
+    width: 95%;
+    min-height: 100px;
+    background: #DE6F00;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.headBodyCurso .contPublicar{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.headBodyCurso.active .contPublicar{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.contPublicar input{
+    width: calc(100% - 120px);
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-right:10px;
+    background: white;
+}
+
+.contPublicar button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contPublicar button ion-icon{
+    font-size: 18px;
+}
+
+.headBodyCurso .contOpcionHead{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.contOpcionHead button{
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    background: rgba(236, 127, 63, 0.89);
+    margin: 0 10px;
+}
+
+.headBodyCurso.active .contOpcionHead{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}

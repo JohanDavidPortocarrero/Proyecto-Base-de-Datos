@@ -1,0 +1,150 @@
+.BodyLogin{
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contLogin{
+    position: relative;
+    width: 800px;
+    height: 85%;
+}
+
+.formLogin{
+    width: 380px;
+    height: 100%;
+    background: #E04A5C;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formLogin h1{
+    flex: none;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.formLogin .contForm{
+    flex: none;
+    width: 90%;
+    height: calc(100% - 400px);
+    background: #E04A5C;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 30px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contForm .inputUsername, .contForm .inputPassword{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.contForm .inputUsername div, .contForm .inputPassword div{
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contForm .inputUsername div ion-icon, .contForm .inputPassword div ion-icon{
+    font-size: 30px;
+    color: white;
+}
+
+.contForm .inputUsername input, .contForm .inputPassword input{
+    width: 270px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(22, 21, 21);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 5px 8px;
+    background: white;
+}
+
+.contForm .inputUsername label, .contForm .inputPassword label{
+    display: none;
+}
+
+
+.formLogin .contBtn{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formLogin .contBtn button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.formLogin .contBtn button:nth-child(2){
+    margin-top: 15px;
+    padding: 0;
+    border-radius: 0;
+    font-size: 12px;
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.botonUni{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 100px);
+    width: 600px;
+    height: 200px;
+    background: #83A4E3;
+    box-shadow: 0px 0px 10px 5px rgba(162, 124, 242, 0.65);
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botonUni a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: white;
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: 700;
+}
