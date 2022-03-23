@@ -1,0 +1,52 @@
+.bodyItem{
+    flex: none;
+    width: 98%;
+    height: 50px;
+    background: rgba(255, 102, 0, 0.678);
+    overflow: hidden;
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 60px;
+}
+
+.bodyItem .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.bodyItem .icon img{
+    width: 100%;
+}
+
+.bodyItem .btn{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyItem .btn button{
+    padding: 5px 10px;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+}
+
+.bodyItem .nombre{
+    width: calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.bodyItem .nombre p{
+    font-weight: 600;
+}

@@ -1,0 +1,96 @@
+.containerModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.modalCardCursos{
+    width: 800px;
+    height: 80vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modalCardCursos .contDatos {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.modalCardCursos .contDatos .contImagen{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.modalCardCursos .contDatos .contImagen img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.modalCardCursos .contDatos .contInformacion{
+    width: calc(100% - 200px);
+    max-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.modalCardCursos .contDatos .contInformacion h2{
+    margin-bottom: 20px;
+}
+
+.modalCardCursos .contDatos .contInformacion p{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.modalCardCursos .contBtnModal{
+    width: 100%;
+    height: 50px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.modalCardCursos .contBtnModal button{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modalCardCursos .contBtnModal .contBtnEspecial{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modalCardCursos .contBtnModal .contBtnEspecial button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}

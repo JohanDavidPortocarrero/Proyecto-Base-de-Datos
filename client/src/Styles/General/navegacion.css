@@ -41,6 +41,12 @@
     align-items: center;
 }
 
+.bodyNavegacion ul li button{
+    background: none;
+    border: none;
+    color: blue;
+}
+
 .bodyNavegacion ul li .link .icon{
     width: 40px;
     height: 40px;
@@ -55,7 +61,7 @@
     font-size: 25px;
 }
 
-.bodyNavegacion ul li .link span{
+.bodyNavegacion ul li .link span, .bodyNavegacion ul li button span{
     width: 0;
     overflow: hidden;
 }
@@ -64,7 +70,7 @@
     width: 90%;
 }
 
-.bodyNavegacion.active ul li .link span{
+.bodyNavegacion.active ul li .link span, .bodyNavegacion.active ul li button span{
     width: calc( 100% - 60px );
     height: 40px;
     padding-left: 10px;

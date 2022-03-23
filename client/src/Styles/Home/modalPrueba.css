@@ -54,30 +54,17 @@
 .modalCrear{
     position: relative;
     width: 400px;
+    height: 100%;
+    max-height: 80vh;
     background: white;
     border-radius: 20px;
     margin: 15px;
-    max-height: 80vh;
     overflow: hidden;
-    overflow-y: auto;
-}
-
-.modalCrear::-webkit-scrollbar{
-    width: 2px;
-}
-
-.modalCrear::-webkit-scrollbar-thumb{
-    background: linear-gradient(#00c6ff, #00ffea);
-    border-radius: 6px;
-}
-
-.modalCrear::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(#00c6ff, #00c6ff);
 }
 
 .cuestionario{
     width: 100%;
-    min-height: 60px;
+    height: 100%;
     padding: 10px;
     padding-bottom: 10px;
 }
@@ -118,7 +105,28 @@
 
 .contOpcion{
     width: 100%;
-    height: auto;
+    height: calc(100% - 100px);
+    padding-bottom: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.contOpcion::-webkit-scrollbar{
+    width: 2px;
+}
+
+.contOpcion::-webkit-scrollbar-thumb{
+    background: linear-gradient(#00c6ff, #00ffea);
+    border-radius: 6px;
+}
+
+.contOpcion::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00c6ff, #00c6ff);
+}
+
+.contPreguntaOpen, .contPreguntaCloso{
+    width: 100%;
+    padding: 0 10px;
 }
 
 .contSelecion{
@@ -133,6 +141,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 5px;
 }
 
 .contBtnOpc{
@@ -156,6 +165,13 @@
 .btnOpcion.active{
     background: lawngreen;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.603);
+}
+
+.contBtnAccionPreguntas{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .opcionAdd{
@@ -200,7 +216,7 @@
 
 .modalMostrar{
     width: 350px;
-    min-height: 20vh;
+    height: 100%;
     background: white;
     border-radius: 20px;    
     overflow: hidden;
@@ -263,7 +279,7 @@
 
 .contPregunta textarea{
     width: 100%;
-    height: 150px;
+    height: 100px;
     resize: none;
     background: rgba(255, 255, 255, 0.2);
     outline: none;
@@ -275,6 +291,6 @@
     font-size: 16px;
     letter-spacing: 1px;
     color: rgb(22, 21, 21);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.486);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.486);
     background: white;
 }

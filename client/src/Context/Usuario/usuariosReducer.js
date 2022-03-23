@@ -21,8 +21,6 @@ export default (state, action) => {
             return {
                 ...state,
                 datosUsuario: payload,
-                usuariosList: payload,
-                usuarioAutenticado: true
             }
         case ACTUALIZAR_USUARIO:
             return {
@@ -36,12 +34,10 @@ export default (state, action) => {
             return {
                 ...state,
                 datosUsuario: payload,
-                usuariosList: payload,
             }
         case CARGAR_USUARIO:
             return {
                 ...state,
-                userCargando: payload
             }
         default:
             return state;

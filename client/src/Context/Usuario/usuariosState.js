@@ -6,63 +6,33 @@ import usuariosReducer from './usuariosReducer'
 
 const UsuariosState = (props) => {
     const inicialState = {
-        userCargando: true,
-        usuarioAutenticado: false,
-        datosUsuario: [{
-            identificacion: 10224563,
-            nombre: 'User Test',
-            email: 'test@testing.com',
-            rol: 'Personal',
-            descripcion: 'Es un docente'
-        }],
-        usuariosList: []
+        datosUsuario: null,
+        estudiantes: null,
+        docentes: null,
+        administradores: null
     }
 
     const [state, dispatch] = useReducer(usuariosReducer, inicialState)
 
-    const obtenerUsuario = async (id) => {
-        try{
-
-            const res = await axios.get(''+id);
-            //console.log(res.data)
-            dispatch({
-                type: 'OBTENER_USUARIO',
-                payload: res.data
-            })
-
-        }catch(e){
-            console.log(e)
-        }
-    }
-
-    const autenticarUsuario = async (datos) => {
+    const saveAutenticarUsuario = async (datos) => {
         try{
             
-            const res = await axios.post('', datos );
             dispatch({
                 type: 'AUTENTICAR_USUARIO',
-                payload: res.data
+                payload: datos
             })
 
         }catch(e){
             console.log(e)
-        }
-        finally{
-            dispatch({
-                type: 'CARGAR_USUARIO',
-                payload: false
-            })
         }
     }
 
     const verificarInicioSecion = () => {
-        const elem = window.localStorage.getItem('usuario')
+        const elem = window.localStorage.getItem('usuatioAttendance')
         const dato = elem ? JSON.parse(elem) : null
 
-        console.log(dato)
-
         if( dato != null ){
-            autenticarUsuario(dato)
+            saveAutenticarUsuario(dato);           
         }
         else {
             state.usuarioAutenticado = false;
@@ -72,14 +42,11 @@ const UsuariosState = (props) => {
 
     const cerrarSecion = () => {
         try {
-            window.localStorage.removeItem('usuario');
+            window.localStorage.removeItem('usuatioAttendance');
         } catch (error) {
             console.log(error)
         }
-        state.userCargando = true;
         state.datosUsuario = [];
-        state.usuarioAutenticado = false;
-        state.usuariosList = [];
     }
 
     const crearUsuario = async (datos) => {
@@ -98,14 +65,10 @@ const UsuariosState = (props) => {
 
     return (
         <UsuariosContext.Provider value={{
-            userCargando: state.userCargando,
-            usuarioAutenticado: state.usuarioAutenticado,
-            usuariosList: state.usuariosList,
             datosUsuario: state.datosUsuario,
             verificarInicioSecion,
             cerrarSecion,
-            obtenerUsuario,
-            autenticarUsuario,
+            saveAutenticarUsuario,
             crearUsuario
         }}>
             {props.children}
